@@ -1,0 +1,51 @@
+.root {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  clear: fix;
+  z-index: 2;
+
+  span {
+    text: #fbf9f9 center 30px;
+    font-family: "2dumb";
+  }
+}
+
+.title,
+.title span {
+  font-size: 55px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #ffe249;
+}
+
+.time-blk,
+.score-blk {
+  lost-column: 1/2;
+  margin-bottom: 10px;
+}
+
+.score-blk {
+  display: inline-block;
+}
+
+.message-blk {
+  position: fixed 0;
+  background-color: color(#222 a(75%));
+  opacity: 0;
+  visibility: hidden;
+  transition: all .2s ease;
+  z-index: 2;
+
+  .message {
+    position: absolute 50% * * 50%;
+    text: #ffe249 center 4em;
+    font-family: "2dumb";
+    transform: translate(-50%, -50%);
+  }
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+}

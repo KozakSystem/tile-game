@@ -1,0 +1,49 @@
+[{
+  "id": 0,
+  "group_id": 0,
+  "title": "Butters",
+  "img": "/data/pictures/butters.png",
+  "color": "#9c27b0"
+}, {
+  "id": 1,
+  "group_id": 1,
+  "title": "Cartman",
+  "img": "/data/pictures/cartman.png",
+  "color": "#e91e63"
+}, {
+  "id": 2,
+  "group_id": 2,
+  "title": "Kenny",
+  "img": "/data/pictures/kenny.png",
+  "color": "#4caf50"
+}, {
+  "id": 3,
+  "group_id": 3,
+  "title": "Kyle",
+  "img": "/data/pictures/kyle.png",
+  "color": "#ff5722"
+}, {
+  "id": 4,
+  "group_id": 4,
+  "title": "Stan",
+  "img": "/data/pictures/stan.png",
+  "color": "#ff9800"
+}, {
+  "id": 5,
+  "group_id": 5,
+  "title": "Cartman",
+  "img": "/data/pictures/cartman-nude.png",
+  "color": "#3f51b5"
+}, {
+  "id": 6,
+  "group_id": 6,
+  "title": "Cartman",
+  "img": "/data/pictures/cartman-gandolf.png",
+  "color": "#03a9f4"
+}, {
+  "id": 7,
+  "group_id": 7,
+  "title": "Randy",
+  "img": "/data/pictures/randy.png",
+  "color": "#2196f3"
+}]

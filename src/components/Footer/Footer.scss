@@ -1,0 +1,89 @@
+/*----------  Local variables  ----------*/
+
+$font-regular:                  "Roboto-Regular", sans-serif;
+
+$color-dark:                    #191919;
+
+$bg-color:                      $color-dark;
+
+
+/*----------  Local style  ----------*/
+
+.root {
+  background-color: $bg-color;
+  padding: 20px 0 15px;
+  @media all and (min-width: 768px) {
+    position: absolute * 0 0 0;
+  }
+}
+
+.logo-blk {
+  padding: 12px 0 8px;
+  margin-left: -20px;
+
+  img {
+    vertical-align: bottom;
+  }
+
+  @media all and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.contacts {
+  @media all and (min-width: 768px) {
+    float: left;
+  }
+}
+
+.social {
+  clear: both;
+  text-align: center;
+
+  @media all and (min-width: 768px) {
+    position: absolute * 55px 0 *;
+  }
+}
+
+.bottom-footer {
+  text: #737373 400 14px;
+  font-family: $font-regular;
+  text-align: center; 
+  padding: 30px 0 15px;
+  margin-top: 15px;
+  position: relative;
+
+  &:after-c {
+    position: absolute 0 168px * 168px;
+    height: 1px;
+    background-color: #acacac;
+
+    @media all and (max-width: 1199px) {
+      left: 15px;
+      right: 15px;
+    }
+  }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: #737373;
+    padding-top: 5px;
+
+    &:hover {
+      color: lighten(#737373, 5%);
+    } 
+  }
+}
+
+:local .root :global {
+  .container {
+    position: relative;
+  }
+
+  @media all and (min-width: 1200px) {
+    .container {
+      width: 870px;
+    }
+  }
+}

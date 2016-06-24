@@ -1,0 +1,8 @@
+export const GAME_DATA_REQUEST = 'GAME_DATA_REQUEST'
+export const GAME_DATA_SUCCESS = 'GAME_DATA_SUCCESS'
+export const GAME_DATA_FAIL = 'GAME_DATA_FAIL'
+
+export const START_GAME = 'START_GAME'
+export const STOP_GAME = 'STOP_GAME'
+
+

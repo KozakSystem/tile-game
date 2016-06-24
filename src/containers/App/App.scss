@@ -1,0 +1,17 @@
+.root {
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #1c0e1d url('./background.jpg') center no-repeat;
+  position: relative;
+  
+  &:before-c {
+    position: absolute 0;
+    background-color: color(#222 a(75%));
+    z-index: 0;
+  }
+}
+
+.content-wrapper {
+  z-index: 1;
+}

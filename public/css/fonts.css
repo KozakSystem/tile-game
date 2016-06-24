@@ -1,0 +1,23 @@
+@font-face {
+    font-family: '2dumb';
+    src: url('../fonts/2dumb.woff2') format('woff2');
+    src: url('../fonts/2dumb.woff2') format('woff')
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '3dumb';
+    src: url('../fonts/3dumb.woff2') format('woff2');
+    src: url('../fonts/3dumb.woff2') format('woff')
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'junebug';
+    src: url('../fonts/junebug.woff2') format('woff2');
+    src: url('../fonts/junebug.woff2') format('woff')
+    font-weight: normal;
+    font-style: normal;
+}

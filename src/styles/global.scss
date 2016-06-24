@@ -1,0 +1,42 @@
+@import './vendors/reset.scss';
+@import './utils/variables.scss';
+@import './helpers.scss'; 
+
+body {
+  background-color: #fff;
+}
+ 
+:global {
+
+  #content {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  .container {
+    lost-center: $desc-w;
+
+    @media all and (max-width: 1199px) {
+      width: $net-w;
+      padding-left: 15px;
+      padding-right: 15px;
+      box-sizing: border-box;
+    }
+
+    @media all and (max-width: 991px) {
+      width: $tab-w;
+    }
+
+    @media all and (max-width: 767px) {
+      width: $smart-w;
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+}

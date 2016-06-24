@@ -1,0 +1,55 @@
+.root {
+  clear: fix;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-top: 50px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .2s ease;
+  position: relative;
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.tile-list {
+  margin-top: 15px;
+  > div {
+    lost-column: 1/4;
+    margin-bottom: 30px;
+  }
+}
+
+.round-info {
+  position: absolute 0;
+  background-color: color(#222 a(50%));
+  z-index: 98;
+  opacity: 1;
+  visibility: visible;
+
+  .round-num {
+    width: 550px;
+    max-width: 100%;
+    display: inline-block;
+    text: #ffe249 center uppercase 4em 1em;
+    letter-spacing: 0.4em;
+    font-family: "junebug";
+    transform-origin: center;
+    position: absolute 50% * * 50%;
+    transform: translate(-50%, -50%) rotate(20deg);
+
+    i {
+      font-style: normal;
+      font-size: 4em;
+      line-height: 1.3em;
+    }
+  }
+
+  &.hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease;
+  }
+}

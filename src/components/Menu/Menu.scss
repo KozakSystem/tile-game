@@ -1,0 +1,47 @@
+.root {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px 15px;
+  min-width: 100%;
+  max-width: 100%;
+  position: absolute 50% 0 * 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+}
+
+:local .root:global(.top) {
+  transition: all .2s ease;
+  transform: translateY(-250%);
+}
+
+:local .root:global(.center) {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateY(-50%);
+}
+
+.headline {
+  text: #ffe249 center uppercase 5em 1.3em;
+  letter-spacing: 0.4em;
+  font-family: "junebug";
+}
+
+.bottom-blk {
+  display: block;
+  margin-top: 55px;
+}
+
+.link {
+  display: inline-block;
+  text: #fbf9f9 center uppercase 2em 1em;
+  font-family: "2dumb";
+  text-decoration: none;
+  animation-duration: 1.5s;
+  animation-delay: .7s;
+  animation-iteration-count: infinite;
+
+  &:hover {
+    color: #bfbfbf;
+  }
+}
