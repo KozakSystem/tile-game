@@ -13,7 +13,7 @@ const initialState = {
     number: 0,
     active_tile: {},
     finish_tiles: {},
-    game_time: 0,
+    time: DEFAULT_ROUND_TIME,
     score: 0,
     tiles: null
   },

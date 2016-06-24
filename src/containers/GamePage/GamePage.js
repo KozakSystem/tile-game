@@ -130,7 +130,7 @@ class GamePage extends Component {
         <div className="container">
           <InfoPanel 
             round={game.current_round.number}
-            time={DEFAULT_ROUND_TIME}
+            time={game.current_round.time}
             score={game.current_round.score}
             endTimeHandler={gameActions.dropRound} />
 

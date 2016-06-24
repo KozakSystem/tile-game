@@ -78,7 +78,8 @@ module.exports = {
             loader: ExtractTextPlugin.extract('style', 'css?modules&camelCase=dashes!resolve-url!sass?sourceMap!postcss')
         }, {
             test: /\.(png|jpg|svg|eot|ttf|woff|woff2)$/,
-            loader: 'file?name=[path][name].[ext]?[hash]'
+            loader: 'file?name=img/[name].[ext]?[hash]'
+            //loader: 'file?name=[path][name].[ext]?[hash]'
         }],
 
         noParse: /node_modules\/(react|react-dom|angular|swiper)/

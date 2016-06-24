@@ -13,8 +13,8 @@ export default class InfoPanel extends Component {
     super(props);
 
     this.state = {
-      round: this.props.round,
-      time: this.props.time,
+      round: props.round,
+      time: props.time,
       show_message: false
     }
   }
@@ -22,7 +22,7 @@ export default class InfoPanel extends Component {
   componentWillUpdate(nextState) {
     if(nextState.round !== this.props.round) {
       this.setState({
-        time: DEFAULT_ROUND_TIME
+        time: nextState.time
       })
     }
   }

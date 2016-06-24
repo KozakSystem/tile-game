@@ -25,6 +25,10 @@
   text: #ffe249 center uppercase 5em 1.3em;
   letter-spacing: 0.4em;
   font-family: "junebug";
+
+  @media all and (max-width: 479px) {
+    font-size: 3em;
+  }
 }
 
 .bottom-blk {

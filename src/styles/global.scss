@@ -30,7 +30,7 @@ body {
       width: $tab-w;
     }
 
-    @media all and (max-width: 767px) {
+    @media all and (max-width: 478px) {
       width: $smart-w;
     }
   }

@@ -13,7 +13,7 @@ import load from '../utils/load'
 const default_round_opt = {
   active_tile: {},
   finish_tiles: {},
-  game_time: 0,
+  time: DEFAULT_ROUND_TIME,
   score: 0
 }
 
@@ -96,7 +96,10 @@ export function goToNextRound() {
         ...default_round_opt,
         number: prev_round.number + 1,
         tiles: tilesGenerator(all_tiles),
-        score: prev_round.score
+        score: prev_round.score,
+        time: prev_round.time > 20 
+              ? prev_round.time - 5
+              : prev_round.time
       }
     })
 
