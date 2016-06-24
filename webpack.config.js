@@ -27,9 +27,9 @@ module.exports = {
     },
 
     output: {
-        path: __dirname + "/build/",
+        path: __dirname + "/public/",
         publicPath: '/',
-        filename: '[name].js',
+        filename: 'js/[name].js',
         library: '[name]'
     },
 
@@ -85,13 +85,13 @@ module.exports = {
     },
 
     plugins: [
-        new ExtractTextPlugin('[name].css', {allChunks: true, disable: NODE_ENV=='development'}),
+        new ExtractTextPlugin('css/[name].css', {allChunks: true, disable: NODE_ENV=='development'}),
         new webpack.DefinePlugin({
             NODE_ENV: JSON.stringify(NODE_ENV),
             DEFAULT_TAILS_DATA: JSON.stringify('/data/tails/southpark.json'),
             DEFAULT_TILES_COUNT: 16,
-            DEFAULT_ROUND_TIME: 60, // 1min
-            DEFAULT_TILE_SHOW_TIME: 500 // 30 msec
+            DEFAULT_ROUND_TIME: 60,
+            DEFAULT_TILE_SHOW_TIME: 1000 
         }),
         new webpack.NoErrorsPlugin(),
         // new webpack.ProvidePlugin({

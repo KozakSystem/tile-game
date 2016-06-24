@@ -60,14 +60,10 @@ export default class InfoPanel extends Component {
         <div>
           <h2 className={s.title}>Round {this.props.round}</h2>
         </div>
-
-        {
-          this.state.time 
-          ? <div className={s.timeBlk}>
-              <span>Time: {this.state.time}</span>
-            </div>
-          : 0
-        }
+      
+        <div className={s.timeBlk}>
+          <span>Time: {this.state.time ? this.state.time : 0 }</span>
+        </div>
 
         <div className={s.scoreBlk}>
           <span>Score: {this.props.score}</span>

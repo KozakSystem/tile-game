@@ -97,8 +97,8 @@ class GamePage extends Component {
     ) {
       gameActions.setActiveTile(tile_id, group_id)
 
-      setTimeout(function() {
-        gameActions.setActiveTile(null)
+      setTimeout(function(tile_id) {
+        if(active_tile.id == tile_id) gameActions.setActiveTile(null)
       }, DEFAULT_TILE_SHOW_TIME)
     }
   }
@@ -123,7 +123,7 @@ class GamePage extends Component {
     return (
       <div className={`${s.root} ${page.game_start ? s.show : ''}`}>
         <div className={`${s.roundInfo} ${!this.state.show_round_num ? s.hide : ''}`} 
-             style={{ position: 'absolute', left: 0, top: 0, right: 0, bottom: 0}}>
+             style={{ position: 'fixed', left: 0, top: 0, right: 0, bottom: 0}}>
              <span className={s.roundNum}>Round <i>{game.current_round.number}</i></span>
         </div>
 
