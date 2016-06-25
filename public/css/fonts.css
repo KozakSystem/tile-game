@@ -1,23 +1,38 @@
 @font-face {
-    font-family: '2dumb';
-    src: url('../fonts/2dumb.woff2') format('woff2');
-    src: url('../fonts/2dumb.woff2') format('woff')
+    font-family: '3dumb';
+    src: url('../fonts/3dumb-webfont.eot');
+    src: url('../fonts/3dumb-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/3dumb-webfont.woff2') format('woff2'),
+         url('../fonts/3dumb-webfont.woff') format('woff'),
+         url('../fonts/3dumb-webfont.ttf') format('truetype'),
+         url('../fonts/3dumb-webfont.svg#webfontregular') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
 
 @font-face {
-    font-family: '3dumb';
-    src: url('../fonts/3dumb.woff2') format('woff2');
-    src: url('../fonts/3dumb.woff2') format('woff')
+    font-family: '2dumb';
+    src: url('../fonts/2dumb-webfont.eot');
+    src: url('../fonts/2dumb-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/2dumb-webfont.woff2') format('woff2'),
+         url('../fonts/2dumb-webfont.woff') format('woff'),
+         url('../fonts/2dumb-webfont.ttf') format('truetype'),
+         url('../fonts/2dumb-webfont.svg#webfontregular') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
 
 @font-face {
     font-family: 'junebug';
-    src: url('../fonts/junebug.woff2') format('woff2');
-    src: url('../fonts/junebug.woff2') format('woff')
+    src: url('../fonts/junebug-webfont.eot');
+    src: url('../fonts/junebug-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/junebug-webfont.woff2') format('woff2'),
+         url('../fonts/junebug-webfont.woff') format('woff'),
+         url('../fonts/junebug-webfont.ttf') format('truetype'),
+         url('../fonts/junebug-webfont.svg#webfontregular') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
